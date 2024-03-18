@@ -14,6 +14,12 @@ while(p){
     if(p->data == data){
         if(pp)
         pp->link = p->link;
+        else
+        *head = p->link;
+        free(p);
+        return;
     }
+    pp=p;
+    p=p->link
 }
 }
